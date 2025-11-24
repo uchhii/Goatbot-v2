@@ -5,6 +5,7 @@ run = "node index.js"
 
 [nix]
 channel = "stable-22_05"
+packages = ["unzip"]
 
 [env]
 XDG_CONFIG_HOME = "/home/runner/.config"
@@ -76,3 +77,10 @@ support = true
 
 [unitTest]
 language = "nodejs"
+
+[agent]
+expertMode = true
+
+[[ports]]
+localPort = 3001
+externalPort = 80
